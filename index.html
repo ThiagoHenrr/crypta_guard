@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptaGuard</title>
+    <link rel="stylesheet" href="./style/style.css">
+  </head>
+  <body>
+
+<header>  
+  <h1>CryptaGuard</h1>
+</header>
+
+<main>
+
+  <section>
+    <textarea id="input-text" class="text-input">Digite seu texto aqui</textarea>
+    <div>
+      <img src="./assets/exclamation.svg">
+      <label for="input-text">Apenas letras minusculas e sem acento</label>
+    </div>
+    <div>
+      <button class="buttons" onclick="encryptButton()">Criptografar</button>
+      <button class="buttons" onclick="decryptButton()">Descriptografar</button>
+    </div>
+  </section>
+
+  <section >
+    <div class="output-box-section">
+      <textarea id="output-text" class="output-box text-input"></textarea>
+      <button class="buttons" onclick="copyButton()">Copiar</button>
+    </div>
+  </section>
+</main>
+
+    <footer>
+      Created by Thiago H.
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
