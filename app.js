@@ -1,5 +1,4 @@
-//const input_text = document.querySelect("input-text");
-//const input_message = document.querySelect("input-message");
+
 const inputTextArea = document.getElementById("input-text");
 const outputTextArea = document.getElementById("output-text");
 
@@ -47,7 +46,6 @@ function decryptButton(){
 function copyButton(){
 	outputTextArea.select();
 	document.execCommand("copy");
-	console.log("Text copiado");
 }
 
 function encrypt(string){
@@ -80,11 +78,3 @@ function decrypt(string){
     return decryptedString;
 }
 
-
-let teste = "texto de teste";
-let crypt = encrypt(teste);
-
-console.log("ENCRYPTED: " + crypt);
-
-let dec = decrypt(crypt);
-console.log("DECRYPTED " + dec);
